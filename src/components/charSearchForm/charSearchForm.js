@@ -25,7 +25,7 @@ const CharSearchForm = () => {
             .then(onCharLoaded);
     }
 
-    const errorMessage = error ? <div className='char__search-critical-error'><ErrorMessage/></div> : null;
+    const errorMessage = error ? <div className='char__search-critical-error'><errorMessage/></div> : null;
     const results = !char ? null : char.length > 0 ?
                 <div className="char__search-wrapper">
                     <div className="char__search-success">There is! Visit {char[0].name} page?</div>
